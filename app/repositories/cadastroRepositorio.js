@@ -3,7 +3,7 @@ import { consulta } from "../database/conexao.js"
 class cadastroRepositorio{
     create(cadastro){
         const sql = 'INSERT INTO cadastro SET?'
-        return consulta(sql,cadastro,'NÃO FOI POSSIVEL CADASTRAR')
+        return consulta(sql,cadastro,'NÃO FOI POSSIVEL CAD')
     }
     findAll(){
         const sql = 'SELECT * FROM cadastro'
